@@ -39,7 +39,9 @@ maven ,junit,log4j versions are so important
 and in intellije click to left side big blue 'M' its Maven target and we wait everything gonna be build.
 
 13seconds later..................
-check your browser version and its a web case download chromedriver.exe in ----> https://chromedriver.chromium.org/downloads
+check your browser version and its a web case download 
+
+chromedriver.exe in ----> https://chromedriver.chromium.org/downloads
 
 check your driver i create 4 java file in hepsiemlak_case2_desktopp/src/test/java/ road
 WebElementsConstants.java --->all locators are here absolutely everytime check locator
