@@ -2,7 +2,6 @@ import org.openqa.selenium.By;
 
 public class WebElementsConstants {
 
-
     public static By btn_satilik_icon = By.cssSelector("[title='İstanbul Satılık İlanları']");
     public static By btn_select_city = By.cssSelector("[class=he-select-base__value]");
     public static By btn_city_search = By.cssSelector("input[placeholder='İl Ara']");
@@ -29,10 +28,9 @@ public class WebElementsConstants {
     public static By control_tags = By.cssSelector("ul[class='applied-filters-list']");
 
     public static By control_city_tag = By.xpath("//li[@class='applied-filters-list__group']/span[contains(text(),'İzmir')]");
-
-
-
-
+    public static By control_town_tag = By.xpath("//li[@class='applied-filters-list__group']/span[contains(text(),'Çankaya')]");
+    public static By control_bina_tag = By.xpath("//li[@class='applied-filters-list__group']/span[contains(text(),'2+1')]");
+    public static By control_site_tag = By.xpath("//li[@class='applied-filters-list__group']/span[contains(text(),'Evet')]");
 
 
 }

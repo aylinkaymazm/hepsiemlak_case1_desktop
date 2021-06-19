@@ -74,6 +74,9 @@ public class TestSteps extends BaseMethods{
         Thread.sleep(2000);
 
         findElement(WebElementsConstants.control_city_tag).getText().equals("İzmir");
+        findElement(WebElementsConstants.control_town_tag).getText().equals("Bornova");
+        findElement(WebElementsConstants.control_bina_tag).getText().equals("2+1");
+        findElement(WebElementsConstants.control_site_tag).getText().equals("Evet");
 
 
 
