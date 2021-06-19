@@ -1,7 +1,7 @@
 # hepsiemlak_case1_desktop
 
 HEY!
-Its a Selenium with Java Automation case project.
+Its a Selenium with Java Automation WEB case project.
 
 This project used maven , junit , log4j and page object model (POM)
 
@@ -21,7 +21,7 @@ Here these case steps:
 
 -search and page list opened
 
--Check for Tags in the filter area
+-Check FOR Tags in the filter area
 
 END.
 --------------------------------------------------------------------------------------
