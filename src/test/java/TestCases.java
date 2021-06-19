@@ -11,14 +11,10 @@ public class TestCases extends TestSteps{
         fiyat();
         bina_yasi();
         control_tags();
-        /*
-        exit();*/
+        exit();
     }
-
-
-
-   /* public void exit(){
+    public void exit(){
         driver.quit();
 
-    }*/
+    }
 }

@@ -2,6 +2,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+import static org.openqa.selenium.Keys.ENTER;
+import static org.openqa.selenium.Keys.TAB;
+
 
 public class TestSteps extends BaseMethods{
     JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -44,9 +47,14 @@ public class TestSteps extends BaseMethods{
 
     public void fiyat()throws InterruptedException{
         jse.executeScript("window.scrollBy(0,300)");
+        Thread.sleep(1000);
         findElement(WebElementsConstants.input_priceMin).sendKeys("100000");
+        Thread.sleep(1000);
+        findElement(WebElementsConstants.input_priceMin).sendKeys(TAB);
+
         findElement(WebElementsConstants.input_priceMax).sendKeys("2000000");
-        Thread.sleep(2000);
+        //findElement(WebElementsConstants.input_priceMax).sendKeys(TAB);
+        Thread.sleep(5000);
     }
 
     public void bina_yasi(){
@@ -65,11 +73,10 @@ public class TestSteps extends BaseMethods{
         String ControlTagsA = findElement(WebElementsConstants.control_tags).getText();
         Thread.sleep(2000);
 
-        if (controlTag.equals(ControlTagsA)) {
-            System.out.println("Tags konrol edilmiştir");
-        } else {
-            System.out.println("Tags eksik");
-        }
+        findElement(WebElementsConstants.control_city_tag).getText().equals("İzmir");
+
+
+
     }
 
 
